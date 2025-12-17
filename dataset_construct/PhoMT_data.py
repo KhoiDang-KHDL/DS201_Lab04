@@ -4,7 +4,7 @@ from torch.utils.data import Dataset
 from torch.nn.utils.rnn import pad_sequence
 from typing import List, Dict
 
-from vocab import Vocabulary 
+from dataset_construct.vocab import Vocabulary 
 
 class TranslationDataset(Dataset):
     def __init__(self, json_path: str, vocab: Vocabulary):
